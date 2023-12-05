@@ -1,0 +1,204 @@
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 80px auto;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("computerfront.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 10vh;
+    letter-spacing: 2px;
+    color: rgba(231, 232, 243, 0.861);
+}
+
+.nav {
+    height: 80px;
+    border-top: 4px solid #222;
+    border-bottom: 4px solid #222;
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.nav .navbutton img {
+    height: 50px;
+}
+
+.nav ol {
+    list-style: none;
+    display: flex;
+}
+
+.nav ol li {
+    margin: 0 10px;
+}
+
+.nav ol li a {
+    color: rgb(218, 217, 230);
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    transition:0.3s ease-in-out;
+}
+
+.nav ol li a:hover {
+    color: rgb(154, 184, 237);
+}
+
+.main {
+    padding: 10px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-align: center;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.808);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.flex div {
+    border: solid rgb(218, 217, 230) 4px;
+    border-radius: 5px;
+    margin: 5px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.flex img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.flex img:hover {
+    transition: .3s all ease-in-out;
+    transform: scale(1.05);
+    
+}
+
+.gallery {
+    max-width: 100%;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(236, 236, 236);
+    color: #222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.section a:hover {
+    color: rgb(163, 173, 230);
+}
+
+@media screen and (max-width: 1400px) {
+    .wrapper {
+        width: 100vw;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+
+    .nav ol li a{
+        font-size: 15px;
+    }
+
+    .header {
+        height: 40vh;
+    }
+    
+    .header h1 {
+        font-size: 50px;
+        padding-top: 15vh;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex div {
+        width: 100%;
+        height: 600px!important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .nav ol li a{
+        font-size: 13px;
+    }
+
+    .flex div {
+        width: 100%;
+        height: 300px!important;
+    }
+}
